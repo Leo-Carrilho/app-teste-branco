@@ -11,14 +11,14 @@ export default function MetricCard({
   children 
 }) {
   const getHumidityStatus = (humidity) => {
-    if (humidity < 10) return { label: "Crítico", className: "critical", icon: "warning", color: "#224fe4ff" }
-    if (humidity < 20) return { label: "Muito Seco", className: "very-dry", icon: "water_drop", color: "#224fe4ff" }
-    if (humidity < 30) return { label: "Seco", className: "dry", icon: "water_drop", color: "#224fe4ff" }
-    if (humidity < 40) return { label: "Moderado", className: "moderate", icon: "water_drop", color: "#224fe4ff" }
+    if (humidity < 10) return { label: "Crítico", className: "critical", icon: "warning", color: "#ff0000" }
+    if (humidity < 20) return { label: "Muito Seco", className: "very-dry", icon: "water_drop", color: "#f37c06" }
+    if (humidity < 30) return { label: "Seco", className: "dry", icon: "water_drop", color: "#eeff00" }
+    if (humidity < 40) return { label: "Moderado", className: "moderate", icon: "water_drop", color: "rgb(8, 235, 125)" }
     if (humidity < 60) return { label: "Ideal", className: "ideal", icon: "check_circle", color: "#224fe4ff" }
-    if (humidity < 70) return { label: "Úmido", className: "wet", icon: "water_drop", color: "#224fe4ff" }
+    if (humidity < 70) return { label: "Úmido", className: "wet", icon: "water_drop", color: "#011556" }
     if (humidity < 80) return { label: "Muito Úmido", className: "very-wet", icon: "water_drop", color: "#224fe4ff" }
-     if (humidity < 100) return { label: "Extremamente Úmido", className: "very-wet", icon: "water_drop", color: "#224fe4ff" }
+     if (humidity < 100) return { label: "Extremamente Úmido", className: "very-wet", icon: "water_drop", color: "rgb(228, 34, 34)" }
     return { label: "Excesso", className: "excess", icon: "warning", color: "#224fe4ff" }
   }
 
