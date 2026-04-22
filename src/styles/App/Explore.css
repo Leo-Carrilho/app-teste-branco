@@ -73,58 +73,6 @@ body {
   padding-bottom: 80px;
 }
 
-/* ===== HEADER ===== */
-.explore-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: linear-gradient(135deg, var(--card-bg), rgba(18, 22, 28, 0.4));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--glass-border);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.explore-header h1 {
-  font-size: 1.8rem;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.notification-icon {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.notification-icon:hover {
-  border-color: var(--primary);
-  transform: translateY(-2px);
-}
-
-.notification-icon span {
-  font-size: 24px;
-  color: var(--text-secondary);
-  transition: color 0.3s ease;
-}
-
-.notification-icon:hover span {
-  color: var(--primary);
-}
-
 /* ===== TABS ===== */
 .tabs-container {
   display: flex;
@@ -147,7 +95,7 @@ body {
   align-items: center;
   gap: 8px;
   padding: 16px 24px;
-  background: linear-gradient(135deg, var(--card-bg), rgba(18, 22, 28, 0.4));
+  background: linear-gradient(135deg, #2a2f3a, #1a1f2a); /* Cor padrão */
   border: 1px solid var(--glass-border);
   border-radius: 20px;
   color: var(--text-secondary);
@@ -160,7 +108,10 @@ body {
 .tab-btn::before {
   content: '';
   position: absolute;
-  inset: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   border-radius: 22px;
   opacity: 0;
@@ -177,18 +128,21 @@ body {
   opacity: 0.2;
 }
 
+
 .tab-btn.active {
-  background: linear-gradient(135deg, var(--primary-soft), rgba(0, 102, 255, 0.1));
+  background: linear-gradient(135deg, #0066ff, #0044cc) !important;
   border-color: var(--primary);
-  color: var(--primary);
+  color: white;
 }
 
-.tab-btn.active::before {
-  opacity: 0.1;
+.tabs-container .tab-btn.active {
+  background: linear-gradient(135deg, #0066ff, #0044cc) !important;
+  border-color: var(--primary);
+  color: white;
 }
 
 .tab-icon {
-  font-size: 28px !important;
+  font-size: 28px;
 }
 
 .tab-label {

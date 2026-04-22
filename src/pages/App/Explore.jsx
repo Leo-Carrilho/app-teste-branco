@@ -10,7 +10,6 @@ import DiarioTab from "../../components/App/Explore/DiarioTab"
 import MapaTab from "../../components/App/Explore/MapaTab"
 import EstoqueTab from "../../components/App/Explore/EstoqueTab"
 import AtividadesTab from "../../components/App/Explore/AtividadesTab"
-import ParticleBackground from "../../components/App/Home/ParticleBackground"
 import "../../styles/App/Explore.css"
 
 const tabs = [
@@ -80,9 +79,7 @@ export default function Explore() {
 
   return (
     <div className="explore-container">
-      <ParticleBackground />
       <AppHeader title="Explorar" showNotification={true} />
-
       <div className="explore-tabs-modern">
         {tabs.map((tab) => (
           <button

@@ -621,13 +621,13 @@ h1.welcome-title {
   font-weight: 500;
   background: #00ff90;
   border: 1px solid var(--card-dark-border);
-  color: #ffffff;
+  color: #003b1d;
 }
 
 .card-badge .badge-dot {
   width: 4px;
   height: 4px;
-  background: #ffffff;
+  background: #003b1d;
   border-radius: 50%;
 }
 
@@ -1251,7 +1251,7 @@ h1.welcome-title {
 
 .explore-icon.diagnose {
   background: linear-gradient(135deg, var(--primary-soft), rgba(29, 107, 53, 0.14));
-  color: var(--primary);
+  color: #00ff90;
 }
 
 .explore-icon.weather {
@@ -1265,8 +1265,8 @@ h1.welcome-title {
 }
 
 .explore-icon.map {
-  background: linear-gradient(135deg, rgba(139, 107, 74, 0.1), rgba(139, 107, 74, 0.15));
-  color: var(--secondary);
+  background: linear-gradient(135deg, rgba(9, 196, 221, 0.1), rgba(4, 222, 251, 0.15)) !important;
+  color: #ffffff !important;
 }
 
 .explore-icon.stock {
